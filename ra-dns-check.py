@@ -932,7 +932,7 @@ def dict_string(d):
     for i,v in d.items():
         # Ignore the string output if the value of a key is "None"
         if v == "None":
-            dict_str += str(i) + "=\"" + "" + "\","
+            dict_str += str(i) + "=\"" + "unknown" + "\","
         else:
             dict_str += str(i) + "=\"" + str(v) + "\","
     return dict_str.rstrip(",")
